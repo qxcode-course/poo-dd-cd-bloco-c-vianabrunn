@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_15-49-30",
+            "content": "#!/usr/bin/env bash\n\n# Instala pacotes Node.js globais\nnpm install -g typescript esbuild\n\n# Instala pacotes locais\ncd /workspaces\nnpm install --save-dev @types/node readline-sync",
+            "lines": "8"
+        }
+    ]
+}

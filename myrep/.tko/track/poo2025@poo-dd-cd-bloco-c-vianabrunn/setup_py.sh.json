@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_15-49-30",
+            "content": "#!/usr/bin/env bash\n\nmkdir -p .vscode\ncat > .vscode/settings.json <<EOF\n{\n    \"python.analysis.typeCheckingMode\": \"strict\",\n    \"python.analysis.diagnosticMode\": \"workspace\"\n}\nEOF\n\ncode --install-extension ms-python.python",
+            "lines": "11"
+        }
+    ]
+}

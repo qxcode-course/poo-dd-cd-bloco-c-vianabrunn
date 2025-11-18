@@ -1,0 +1,264 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_16-45-03",
+            "content": "@@ -355,136 +355,8 @@\n f):%0A\n-        caixas = %22, %22.join(%5Bstr(elem) for elem in self.caixas%5D)%0A        espera = %22, %22.join(%5Bstr(elem) for elem in self.espera%5D)%0A\n     \n@@ -377,16 +377,21 @@\n aixas: %7B\n+self.\n caixas%7D%5C\n@@ -398,17 +398,23 @@\n nEspera:\n-%7B\n+ %7Bself.\n espera%7D%22\n@@ -423,225 +423,104 @@\n    %0A\n-class main:%0A    pessoa = Pessoa(%22Maria%22)%0A    \n+pessoa: Pessoa = %22Maria%22%0Aprint(pessoa)%0A\n budega\n- =\n+:\n  Budega\n-(0)%0A    while True:%0A        line = input()%0A        print(%22$%22+ line)%0A        args: list%5Bstr%5D = line.split()%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0Amain(\n+ = 5%0Abudega.espera.append(pessoa)%0Aprint(budega\n )\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-11-15_14-05-40",
+            "content": "@@ -355,130 +355,8 @@\n f):%0A\n-        for _ in range(len(self.caixas)):%0A            if self.caixas%5B_%5D == None:%0A                self.caixas%5B_%5D = %22-----%22%0A\n     \n@@ -753,80 +753,8 @@\n reak\n-%0A        if args%5B0%5D == %22init%22:%0A            budega = Budega(int(args%5B1%5D))\n %0A%0Ama\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-11-15_14-13-22",
+            "content": "@@ -947,65 +947,8 @@\n 1%5D))\n-%0A        if args%5B0%5D == %22show%22:%0A            print (budega)\n %0A%0Ama\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-15_14-14-16",
+            "content": "@@ -630,17 +630,16 @@\n as: \n-%5B\n %7Bcaixas%7D\n %5D%5CnE\n@@ -634,17 +634,16 @@\n %7Bcaixas%7D\n-%5D\n %5CnEspera\n@@ -647,17 +647,16 @@\n era:\n-%5B\n %7Bespera%7D\n %5D%22%0A \n@@ -651,17 +651,16 @@\n %7Bespera%7D\n-%5D\n %22%0A    %0Ac\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-15_14-15-08",
+            "content": "@@ -645,17 +645,16 @@\n nEspera:\n- \n %5B%7Bespera\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-15_14-15-14",
+            "content": "@@ -332,84 +332,8 @@\n  %5B%5D%0A\n-%0A%0A    def arrive(self, pessoa: Pessoa):%0A        self.espera.append(pessoa)%0A%0A\n     \n@@ -1009,75 +1009,8 @@\n ega)\n-%0A        if args%5B0%5D == %22arrive%22:%0A            budega.arrive(args%5B1%5D)\n %0A%0Ama\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-15_14-22-12",
+            "content": "@@ -408,106 +408,8 @@\n a)%0A%0A\n-    def cal (self, num: int):%0A        self.caixas%5B0%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D%0A%0A\n     \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-15_14-26-11",
+            "content": "@@ -454,19 +454,17 @@\n .caixas%5B\n-num\n+0\n %5D = self\n@@ -1250,65 +1250,8 @@\n %5B1%5D)\n-%0A        if args%5B0%5D == %22call%22:%0A            budega.call(0)\n %0A%0Ama\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-11-15_14-27-22",
+            "content": "@@ -415,17 +415,16 @@\n  def cal\n-l\n  (self, \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-15_14-27-38",
+            "content": "@@ -509,72 +509,8 @@\n 0%5D%0A%0A\n-    def finish(self, num: int):%0A        self.caixa%5Bnum%5D = None%0A%0A\n     \n@@ -1310,80 +1310,8 @@\n l(0)\n-%0A        if args%5B0%5D == %22finish%22:%0A            budega.finish%5Bint(args%5B1%5D)%5D\n %0A%0Ama\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-15_14-29-23",
+            "content": "@@ -1428,17 +1428,17 @@\n a.finish\n-(\n+%5B\n int(args\n@@ -1441,17 +1441,17 @@\n args%5B1%5D)\n-)\n+%5D\n %0A%0Amain()\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-15_14-29-50",
+            "content": "@@ -547,33 +547,32 @@\n       self.caixa\n-s\n %5Bnum%5D = None%0A%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-15_14-30-08",
+            "content": "@@ -439,132 +439,8 @@\n t):%0A\n-        if self.caixas%5Bnum%5D != None:%0A            print(%22fail: caixa ocupado%22)%0A            return%0A        %0A        else:%0A    \n     \n@@ -477,20 +477,16 @@\n pera%5B0%5D%0A\n-    \n         \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-15_14-31-21",
+            "content": "@@ -463,17 +463,17 @@\n as%5Bnum%5D \n-=\n+!\n = None:%0A\n@@ -488,155 +488,155 @@\n     \n-self.caixas%5Bnum%5D = self.espera%5B0%5D%0A            del self.espera%5B0%5D%0A        %0A        else:%0A            print(%22fail: caixa ocupado%22)%0A            return\n+print(%22fail: caixa ocupado%22)%0A            return%0A        %0A        else:%0A            self.caixas%5Bnum%5D = self.espera%5B0%5D%0A            del self.espera%5B0%5D\n %0A%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-32-40",
+            "content": "@@ -467,9 +467,9 @@\n um%5D \n-!\n+=\n = No\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-34-44",
+            "content": "@@ -467,18 +467,15 @@\n um%5D \n-== %22-----%22\n+!= None\n :%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-35-41",
+            "content": "@@ -462,28 +462,31 @@\n xas%5Bnum%5D == \n-None\n+%22-----%22\n :%0A          \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-36-34",
+            "content": "@@ -725,72 +725,8 @@\n f):%0A\n-        caixas = %22, %22.join(%5Bstr(elem) for elem in self.caixas%5D)%0A\n     \n@@ -800,14 +800,12 @@\n  == \n-%22\n None\n-%22\n :%0A  \n@@ -843,16 +843,80 @@\n %22-----%22%0A\n+        caixas = %22, %22.join(%5Bstr(elem) for elem in self.caixas%5D)%0A\n         \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-37-37",
+            "content": "@@ -465,17 +465,16 @@\n %5Bnum%5D ==\n-=\n  None:%0A \n@@ -713,32 +713,96 @@\n  __str__(self):%0A\n+        caixas = %22, %22.join(%5Bstr(elem) for elem in self.caixas%5D)%0A\n         for _ in\n@@ -856,28 +856,30 @@\n aixas%5B_%5D == \n+%22\n None\n+%22\n :%0A          \n@@ -913,72 +913,8 @@\n --%22%0A\n-        caixas = %22, %22.join(%5Bstr(elem) for elem in self.caixas%5D)%0A\n     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-39-06",
+            "content": "@@ -461,24 +461,25 @@\n ixas%5Bnum%5D ==\n+=\n  None:%0A     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-39-13",
+            "content": "@@ -470,14 +470,12 @@\n  == \n-%22\n None\n-%22\n :%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-39-22",
+            "content": "@@ -462,28 +462,30 @@\n xas%5Bnum%5D == \n+%22\n None\n+%22\n :%0A          \n@@ -1499,28 +1499,17 @@\n ga.call(\n-int(args%5B1%5D)\n+0\n )%0A      \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-45-25",
+            "content": "@@ -725,47 +725,8 @@\n f):%0A\n-        lista: list%5Bstr%5D = self.caixas%0A\n     \n@@ -818,21 +818,27 @@\n         \n-lista\n+self.caixas\n %5B_%5D = %22-\n@@ -1002,13 +1002,14 @@\n : %5B%7B\n-lista\n+caixas\n %7D%5D%5Cn\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-15_14-51-12",
+            "content": "@@ -787,21 +787,27 @@\n nge(len(\n-lista\n+self.caixas\n )):%0A    \n@@ -817,21 +817,27 @@\n      if \n-lista\n+self.caixas\n %5B_%5D == N\n@@ -926,21 +926,27 @@\n elem in \n-lista\n+self.caixas\n %5D)%0A     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-15_14-51-49",
+            "content": "@@ -1015,15 +1015,17 @@\n as: \n+%5B\n %7Blista%7D\n+%5D\n %5CnEs\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-15_14-52-05",
+            "content": "@@ -737,37 +737,27 @@\n lista: list%5B\n-Pessoa %7C None\n+str\n %5D = self.cai\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-15_14-53-11",
+            "content": "@@ -1022,22 +1022,21 @@\n aixas: %7B\n-caixas\n+lista\n %7D%5CnEsper\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-15_14-55-41",
+            "content": "@@ -1025,17 +1025,16 @@\n as: \n-%5B\n %7Bcaixas%7D\n %5D%5CnE\n@@ -1029,17 +1029,16 @@\n %7Bcaixas%7D\n-%5D\n %5CnEspera\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-15_14-55-51",
+            "content": "@@ -561,67 +561,21 @@\n     \n-    return%0A        %0A        elif self.caixas%5Bnum%5D == Pessoa\n+%0A        else\n :%0A  \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-15_14-56-59",
+            "content": "@@ -359,19 +359,22 @@\n pessoa: \n-str\n+Pessoa\n ):%0A     \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-15_14-59-42",
+            "content": "@@ -359,22 +359,19 @@\n pessoa: \n-Pessoa\n+str\n ):%0A     \n@@ -1506,23 +1506,16 @@\n ive(\n-Pessoa(\n args%5B1%5D)\n )%0A  \n@@ -1502,33 +1502,32 @@\n .arrive(args%5B1%5D)\n-)\n %0A        if args\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-15_15-00-57",
+            "content": "@@ -439,101 +439,8 @@\n t):%0A\n-        if len(self.espera) == 0:%0A            print(%22fail: sem clientes%22)%0A            return%0A\n     \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-15_15-02-50",
+            "content": "@@ -680,18 +680,45 @@\n       el\n-se\n+if self.caixas%5Bnum%5D == Pessoa\n :%0A      \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-15_15-04-22",
+            "content": "@@ -850,28 +850,31 @@\n ista\n- = %5Belem for elem in\n+: list%5BPessoa %7C None%5D =\n  sel\n@@ -881,17 +881,16 @@\n f.caixas\n-%5D\n %0A       \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-15_15-15-58",
+            "content": "@@ -781,110 +781,8 @@\n t):%0A\n-        if num - 1 %3E len(self.caixas):%0A            print(%22fail: caixa inexistente%22)%0A        else:%0A    \n     \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-15_15-18-15",
+            "content": "@@ -792,16 +792,20 @@\n  if num \n+- 1 \n %3E len(se\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-15_15-18-46",
+            "content": "@@ -1827,47 +1827,8 @@\n 1%5D))\n-%0A        print(len(budega.self.caixas))\n %0A%0Ama\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-15_15-19-20",
+            "content": "@@ -910,40 +910,8 @@\n None\n-%0A        print(len(self.caixas))\n %0A%0A  \n@@ -1838,24 +1838,31 @@\n   print(len(\n+budega.\n self.caixas)\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-15_15-19-56",
+            "content": "@@ -1864,16 +1864,39 @@\n         \n+print(len(self.caixas))\n %0A%0Amain()\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-15_15-20-07",
+            "content": "@@ -439,107 +439,8 @@\n t):%0A\n-        if num %3E len(self.caixas):%0A            print(%22fail: caixa inexistente%22)%0A            return%0A\n     \n@@ -906,16 +906,48 @@\n %5D = None\n+%0A        print(len(self.caixas))\n %0A%0A    de\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-15_15-21-11",
+            "content": "@@ -472,10 +472,8 @@\n xas)\n--1\n :%0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-15_15-35-36",
+            "content": "@@ -452,17 +452,16 @@\n f num %3E \n-(\n len(self\n@@ -470,17 +470,16 @@\n aixas)-1\n-)\n :%0A      \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-15_15-36-22",
+            "content": "@@ -451,17 +451,18 @@\n if num %3E\n-=\n+ (\n len(self\n@@ -461,32 +461,35 @@\n len(self.caixas)\n+-1)\n :%0A            pr\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-15_15-39-05",
+            "content": "@@ -444,33 +444,32 @@\n        if num %3E=\n- \n len(self.caixas)\n@@ -892,17 +892,16 @@\n if num %3E\n-=\n  len(sel\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-15_15-39-57",
+            "content": "@@ -962,87 +962,8 @@\n e%22)%0A\n-%0A        elif self.caixa%5Bnum%5D == None:%0A            print(%22fail: caixa vazio%22)%0A%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-15_15-43-35",
+            "content": "@@ -992,17 +992,15 @@\n um%5D \n-!= Pessoa\n+== None\n :%0A  \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-15_15-44-12",
+            "content": "@@ -958,24 +958,16 @@\n tente%22)%0A\n-        \n %0A       \n@@ -959,32 +959,34 @@\n ente%22)%0A%0A        \n+el\n if self.caixas%5Bn\n@@ -986,22 +986,23 @@\n aixa\n-s\n %5Bnum%5D \n-is None\n+!= Pessoa\n :%0A  \n@@ -1037,35 +1037,16 @@\n  vazio%22)\n-%0A            return\n %0A%0A      \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-15_15-45-34",
+            "content": "@@ -987,34 +987,34 @@\n elf.caixas%5Bnum%5D \n-==\n+is\n  None:%0A         \n@@ -1936,56 +1936,32 @@\n     \n-fila = int(args%5B1%5D)%0A            budega.call(fila\n+budega.call(int(args%5B1%5D)\n )%0A  \n@@ -1994,40 +1994,8 @@\n h%22:%0A\n-            pess = int(args%5B1%5D)%0A\n     \n@@ -2016,20 +2016,28 @@\n .finish(\n-pess\n+int(args%5B1%5D)\n )%0A      \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-15_16-09-38",
+            "content": "@@ -1939,20 +1939,16 @@\n  fila = \n-int(\n int(args\n@@ -1943,33 +1943,32 @@\n a = int(args%5B1%5D)\n-)\n %0A            bud\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-11-15_16-10-28",
+            "content": "@@ -1112,35 +1112,16 @@\n %5D = None\n-%0A            return\n %0A%0A    de\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-11-15_16-21-40",
+            "content": "@@ -958,35 +958,16 @@\n tente%22)%0A\n-            return%0A\n         \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-11-15_16-21-58",
+            "content": "class Pessoa:\n    def __init__(self, nome: str ):\n        self.nome = nome\n    def __str__(self):\n        return self.nome\n\nclass Budega:\n    def __init__(self, numCaixas: int):\n        self.caixas: list[Pessoa | None] = []\n        for _ in range(numCaixas):\n            self.caixas.append(None)\n        self.espera: list[Pessoa] = []\n\n\n    def arrive(self, pessoa: Pessoa):\n        self.espera.append(pessoa)\n\n    def call (self, num: int):\n        if num >= len(self.caixas):\n            print(\"fail: caixa inexistente\")\n            return\n        if len(self.espera) == 0:\n            print(\"fail: sem clientes\")\n            return\n        if self.caixas[num] == None:\n            self.caixas[num] = self.espera[0]\n            del self.espera[0]\n            return\n        \n        else:\n            print(\"fail: caixa ocupado\")\n            return\n\n    def finish(self, num: int):\n        if num >= len(self.caixas):\n            print(\"fail: caixa inexistente\")\n            return\n        \n        if self.caixas[num] == None:\n            print(\"fail: caixa vazio\")\n            return\n\n        else:\n            self.caixas[num] = None\n            return\n\n    def __str__(self):\n        lista = [elem for elem in self.caixas]\n        for _ in range(len(lista)):\n            if lista[_] == None:\n                lista[_] = \"-----\"\n        caixas = \", \".join([str(elem) for elem in lista])\n        espera = \", \".join([str(elem) for elem in self.espera])\n        return f\"Caixas: [{caixas}]\\nEspera: [{espera}]\"\n    \nclass main:\n    pessoa = Pessoa(\"Maria\")\n    budega = Budega(0)\n    while True:\n        line = input()\n        print(\"$\"+ line)\n        args: list[str] = line.split()\n        if args[0] == \"end\":\n            break\n        if args[0] == \"init\":\n            budega = Budega(int(args[1]))\n        if args[0] == \"show\":\n            print (budega)\n        if args[0] == \"arrive\":\n            budega.arrive(Pessoa(args[1]))\n        if args[0] == \"call\":\n            fila = int(int(args[1]))\n            budega.call(fila)\n        if args[0] == \"finish\":\n            pess = int(args[1])\n            budega.finish(pess)\n        \n\nmain()",
+            "lines": "79"
+        }
+    ]
+}

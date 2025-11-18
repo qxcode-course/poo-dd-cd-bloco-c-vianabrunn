@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_15-49-30",
+            "content": "#!/usr/bin/env bash\n\npipx install tko\ncode --install-extension usernamehw.errorlens\ncode --install-extension bierner.markdown-preview-github-styles\n",
+            "lines": "5"
+        }
+    ]
+}
