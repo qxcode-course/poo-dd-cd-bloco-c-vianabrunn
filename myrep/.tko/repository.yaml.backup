@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: C:\Users\viana\OneDrive\Documentos\poo2025\poo-dd-cd-bloco-c-vianabrunn\myrep\.tko\cache\poo\Readme.md
-  cache_timestamp: '2025-11-18 01:35:29'
+  cache_timestamp: '2025-11-18 22:21:07'
   filters:
   - listas
 expanded:
@@ -20,6 +20,7 @@ expanded:
 - poo@bloco_c-listas
 tasks:
   poo@budega: '{rate:100, iagen:s, guide:s, alone:8, study:180}'
+  poo@lapiseira: '{rate:100, other:s, alone:9, study:150}'
   poo@pula-pula: '{rate:100, iagen:s, alone:7, study:180}'
 flags:
   quests: 0
@@ -28,4 +29,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@pula-pula
+selected: poo@cinema

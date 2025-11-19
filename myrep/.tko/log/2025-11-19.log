@@ -1,0 +1,7 @@
+2025-11-19 00:03:07, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:124
+2025-11-19 00:03:46, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:124
+2025-11-19 00:04:23, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:124
+2025-11-19 00:04:37, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:124
+2025-11-19 00:04:51, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:100, size:124
+2025-11-19 00:14:47, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-19 00:16:23, SELF, v:1, k:poo@lapiseira, rate:100, other:s, alone:9, study:150
