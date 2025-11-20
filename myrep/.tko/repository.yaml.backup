@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: C:\Users\viana\OneDrive\Documentos\poo2025\poo-dd-cd-bloco-c-vianabrunn\myrep\.tko\cache\poo\Readme.md
-  cache_timestamp: '2025-11-18 22:21:07'
+  cache_timestamp: '2025-11-20 00:07:24'
   filters:
   - listas
 expanded:

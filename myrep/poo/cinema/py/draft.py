@@ -41,6 +41,13 @@ class Sala:
         
         self.assentos[assento] = cliente
 
+    def cancel(self, cliente: str):
+        for i in range(len(self.assentos)):
+            if self.assentos [i] != None and self.assentos [i].getId() == cliente:
+                self.assentos[i] = None
+                return True
+        print("fail: cliente nao esta no cinema")
+        return False
 
     
     def __str__(self):
@@ -73,5 +80,8 @@ class main:
             cliente = Cliente(id, phone)
             assento = int(args[3])
             sala.reservar(cliente, assento)
+        if args[0] == "cancel":
+            cliente = args[1]
+            sala.cancel(cliente)
 
 main()
