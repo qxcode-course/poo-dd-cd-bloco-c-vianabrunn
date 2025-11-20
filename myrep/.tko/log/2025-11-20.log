@@ -9,3 +9,5 @@
 2025-11-20 00:12:40, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:86
 2025-11-20 00:13:32, EXEC, v:1, k:poo@cinema, mode:FULL, rate:88, size:86
 2025-11-20 00:14:24, EXEC, v:1, k:poo@cinema, mode:FULL, rate:100, size:87
+2025-11-20 00:17:04, MOVE, v:1, k:poo@cinema, mode:BACK
+2025-11-20 00:17:30, SELF, v:1, k:poo@cinema, rate:100, human:s, iagen:s, alone:8, study:150
