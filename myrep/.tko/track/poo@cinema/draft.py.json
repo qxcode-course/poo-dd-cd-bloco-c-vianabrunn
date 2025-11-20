@@ -1,0 +1,244 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-19_10-34-35",
+            "content": "@@ -512,327 +512,4 @@\n o%5D'%0A\n-%0Aclass Main:%0A    cliente = Cliente(%22 %22, 0)%0A    sala = Sala(0, %5B%5D)%0A    while True:%0A        line = input()%0A        print(%22$%22+ line)%0A        args: list%5Bstr%5D = line.split()%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22init%22:%0A            capacidade = int(args%5B1%5D)%0A            sala = Sala(capacidade, %5B%5D)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-19_10-37-33",
+            "content": "@@ -835,12 +835,4 @@\n  %5B%5D)\n-%0A%0AMain()\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-19_10-37-46",
+            "content": "@@ -521,16 +521,46 @@\n s Main:%0A\n+    cliente = Cliente(%22 %22, 0)%0A\n     sala\n@@ -568,16 +568,20 @@\n = Sala(0\n+, %5B%5D\n )%0A    wh\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-11-19_10-39-23",
+            "content": "@@ -792,16 +792,20 @@\n pacidade\n+, %5B%5D\n )%0A%0AMain(\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-19_10-39-41",
+            "content": "@@ -442,18 +442,18 @@\n oin(\n-%5Bstr(\n+(str%5B\n elem\n-)\n+%5D\n  for\n@@ -473,17 +473,17 @@\n .assento\n-%5D\n+)\n )%0A      \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-19_10-40-23",
+            "content": "@@ -502,17 +502,15 @@\n  f'%5B\n-%7B\n assento\n-%7D\n %5D'%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-19_10-41-01",
+            "content": "@@ -492,97 +492,8 @@\n     \n-if self.assento:%0A                return f'%5B%7Bassento%7D%5D'%0A            else:%0A                \n retu\n@@ -498,16 +498,25 @@\n turn f'%5B\n+%7Bassento%7D\n %5D'%0A%0Aclas\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-19_10-41-36",
+            "content": "@@ -376,16 +376,20 @@\n %5D = %5B%5D%0A%0A\n+    \n     def \n@@ -395,32 +395,36 @@\n  __str__(self):%0A\n+    \n         assento \n@@ -480,25 +480,53 @@\n o%5D)%0A        \n-%0A\n+    if self.assento:%0A        \n         retu\n@@ -543,16 +543,62 @@\n ento%7D%5D'%0A\n+            else:%0A                return f'%5B%5D'\n %0A%0Aclass \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-19_10-42-26",
+            "content": "@@ -480,29 +480,9 @@\n     \n-if self.assento:%0A    \n+%0A\n     \n@@ -511,46 +511,8 @@\n %7D%5D'%0A\n-        else:%0A            return f'%5B%5D'\n %0A%0Acl\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-19_10-42-35",
+            "content": "@@ -573,17 +573,17 @@\n %0A%0Aclass \n-m\n+M\n ain:%0A   \n@@ -853,14 +853,14 @@\n idade)%0A%0A\n-m\n+M\n ain()\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-19_10-43-24",
+            "content": "@@ -855,62 +855,8 @@\n ade)\n-%0A        if args%5B0%5D == %22show%22:%0A            print(sala)\n %0A%0Ama\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-19_10-44-12",
+            "content": "@@ -411,170 +411,23 @@\n     \n-lista = %5Belem for elem in self.assentos%5D%0A        for _ in range(len(lista)):%0A            if lista%5B_%5D == None:%0A                lista%5B_%5D = %22-----%22%0A        lista = %22\n+assento = %22 - -\n  %22.j\n@@ -520,13 +520,15 @@\n f'%5B%7B\n-lista\n+assento\n %7D%5D'%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-19_10-45-46",
+            "content": "@@ -626,21 +626,28 @@\n      if \n-lista\n+self.assento\n :%0A      \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-19_10-46-32",
+            "content": "@@ -445,16 +445,17 @@\n .assento\n+s\n %5D%0A      \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-19_10-47-02",
+            "content": "@@ -545,16 +545,20 @@\n %5B_%5D = %22-\n+----\n %22%0A      \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-19_10-47-21",
+            "content": "@@ -379,88 +379,8 @@\n  %5B%5D%0A\n-        for _ in range(capacidade):%0A            self.assentos.append(None)%0A%0A    \n %0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-19_10-50-08",
+            "content": "@@ -346,17 +346,16 @@\n .assento\n-s\n : list %5B\n@@ -525,17 +525,16 @@\n .assento\n-s\n %5D%0A      \n@@ -687,17 +687,16 @@\n .assento\n-s\n %5D)%0A     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-19_10-50-29",
+            "content": "@@ -677,21 +677,29 @@\n elem in \n-lista\n+self.assentos\n %5D)%0A     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-19_10-52-37",
+            "content": "@@ -637,24 +637,21 @@\n         \n-assentos\n+lista\n  = %22 %22.j\n@@ -696,24 +696,21 @@\n      if \n-assentos\n+lista\n :%0A      \n@@ -726,24 +726,21 @@\n urn f'%5B%7B\n-assentos\n+lista\n %7D%5D'%0A    \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-19_10-53-31",
+            "content": "@@ -456,220 +456,8 @@\n e)%0A%0A\n-    def resservar(self, cliente: Cliente, assento: int):%0A        if self.assentos%5Bassento%5D == None:%0A            self.assentos%5Bassento%5D = cliente%0A        else: %0A            print('fail: cadeira ja esta ocupada')%0A%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-19_10-56-51",
+            "content": "@@ -463,16 +463,17 @@\n  def res\n+s\n ervar(se\n@@ -1338,213 +1338,8 @@\n ala)\n-%0A        if args%5B0%5D == %22reserve%22:%0A            id = args%5B1%5D%0A            phone = args%5B2%5D%0A            cliente = Cliente(id, phone)%0A            assento = int(args%5B3%5D)%0A            sala.resevar(cliente, assento)\n %0A%0Ama\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-19_10-59-38",
+            "content": "@@ -1513,25 +1513,24 @@\n    sala.rese\n-r\n var(cliente,\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-19_10-59-54",
+            "content": "@@ -456,247 +456,8 @@\n e)%0A%0A\n-    def __procurar(self):%0A        cliente_encontrado = None%0A        for cliente in self.assentos%5B:%5D:%0A            if cliente.name == id:%0A                cliente_encontrado = cliente%0A                print(%22fail: cliente ja esta no cinema%22)%0A%0A\n     \n@@ -600,27 +600,8 @@\n nte%0A\n-            return%0A\n     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-19_11-10-59",
+            "content": "@@ -479,22 +479,8 @@\n self\n-, cliente: str\n ):%0A \n@@ -785,9 +785,9 @@\n to%5D \n-!\n+=\n = No\n@@ -806,94 +806,40 @@\n     \n-print('fail: cadeira ja esta ocupada')%0A        %0A        elif self.__procurar(\n+self.assentos%5Bassento%5D = \n cliente\n-):\n %0A   \n@@ -857,14 +857,8 @@\n turn\n- True%0A\n %0A   \n@@ -866,41 +866,65 @@\n     \n-s\n el\n-f.assentos%5Bassento%5D = cliente%0A\n+se: %0A            print('fail: cadeira ja esta ocupada')\n %0A%0A  \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-19_11-18-37",
+            "content": "@@ -590,18 +590,20 @@\n cliente.\n-id\n+name\n  == id:%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-19-02",
+            "content": "@@ -594,15 +594,10 @@\n nte.\n-getId()\n+id\n  == \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-19-34",
+            "content": "@@ -594,21 +594,21 @@\n nte.\n-id == cliente\n+getId() == id\n :%0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-20-43",
+            "content": "@@ -594,15 +594,10 @@\n nte.\n-getId()\n+id\n  == \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-21-24",
+            "content": "@@ -563,16 +563,17 @@\n ssentos%5B\n+:\n %5D:%0A     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-21-39",
+            "content": "@@ -567,12 +567,11 @@\n tos%5B\n-:\n %5D:%0A\n+\n     \n@@ -662,58 +662,8 @@\n     \n-            return%0A        if cliente_encontrado:%0A\n     \n@@ -714,44 +714,8 @@\n ma%22)\n-%0A            return%0A                \n %0A%0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-24-25",
+            "content": "@@ -541,16 +541,20 @@\n  for cli\n+ente\n  in self\n@@ -585,16 +585,20 @@\n   if cli\n+ente\n .getId()\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-26-33",
+            "content": "@@ -582,18 +582,23 @@\n  if cli.\n-id\n+getId()\n  == clie\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-27-03",
+            "content": "@@ -771,34 +771,25 @@\n turn\n- True%0A        return False\n+%0A                \n %0A%0A  \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-31-43",
+            "content": "@@ -599,24 +599,8 @@\n ente\n- and cli == None\n :%0A  \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-33-12",
+            "content": "@@ -586,15 +586,11 @@\n cli.\n-getId()\n+id \n == c\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-33-33",
+            "content": "@@ -662,24 +662,74 @@\n cliente%0A    \n+            return%0A        if cliente_encontrado:%0A\n             \n@@ -769,20 +769,16 @@\n inema%22)%0A\n-    \n         \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-35-08",
+            "content": "@@ -608,17 +608,17 @@\n and cli \n-!\n+=\n = None:%0A\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-19_11-35-38",
+            "content": "@@ -964,24 +964,16 @@\n (cliente\n-.getId()\n ):%0A     \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-19_11-36-37",
+            "content": "@@ -492,16 +492,50 @@\n : str):%0A\n+        cliente_encontrado = None%0A\n         \n@@ -589,17 +589,16 @@\n .getId()\n- \n == clien\n@@ -609,32 +609,77 @@\n nd cli != None:%0A\n+                cliente_encontrado = cliente%0A\n                 \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-19_11-38-27",
+            "content": "@@ -853,26 +853,21 @@\n     \n+%0A\n     \n-return%0A   \n     \n+elif\n  sel\n@@ -895,16 +895,42 @@\n getId())\n+:%0A            return True%0A\n %0A       \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-40-02",
+            "content": "@@ -548,25 +548,8 @@\n  if \n- cli != None and \n cli.\n@@ -562,24 +562,40 @@\n ) == cliente\n+ and cli != None\n :%0A          \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_11-43-58",
+            "content": "@@ -470,17 +470,16 @@\n procurar\n-C\n (self, c\n@@ -492,16 +492,16 @@\n : str):%0A\n+\n         \n@@ -694,162 +694,8 @@\n alse\n-%0A    %0A    def __verificarA(self, assento: int):%0A        if len(self.assentos)%3C= assento :%0A            print(%22fail: cadeira nao existe%22)%0A            return\n %0A%0A  \n@@ -884,17 +884,16 @@\n procurar\n-C\n (cliente\n@@ -906,42 +906,8 @@\n ())%0A\n-        self.__verificar(assento)%0A\n     \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_11-56-15",
+            "content": "@@ -1082,17 +1082,16 @@\n erificar\n-A\n (assento\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-58-28",
+            "content": "@@ -907,43 +907,8 @@\n t):%0A\n-        self.__verificarA(assento)%0A\n     \n@@ -1062,24 +1062,50 @@\n ())%0A        \n+self.__verificarA(assento)\n %0A        sel\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-19_11-59-37",
+            "content": "@@ -915,52 +915,43 @@\n     \n-if \n self.\n-assentos%5Bassento%5D != None:%0A \n+__verificarA(assento)%0A\n         \n    s\n@@ -950,37 +950,42 @@\n     \n-  \n+if\n  self.\n-__verificarA(assento)\n+assentos%5Bassento%5D != None:\n %0A   \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-19_12-00-02",
+            "content": "@@ -923,54 +923,34 @@\n elf.\n-__verificarA(assento):%0A            return True\n+assentos%5Bassento%5D != None:\n %0A   \n@@ -958,42 +958,38 @@\n     \n-if\n+   \n  self.\n-assentos%5Bassento%5D != None:\n+__verificarA(assento)\n %0A   \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-19_12-02-22",
+            "content": "@@ -849,34 +849,8 @@\n turn\n- True%0A        return False\n %0A%0A  \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-11-19_12-03-39",
+            "content": "class Cliente:\n    def __init__(self, id: str, phone: int):\n        self.id = id\n        self.phone = phone\n\n    def getId (self):\n        return self.id\n    \n    def getPhone (self):\n        return self.phone\n    \n    def __str__(self):\n        return f'{self.id}:{self.phone}'\n\nclass Sala:\n    def __init__(self, capacidade: int):\n        self.assentos: list [Cliente | None] = []\n        for _ in range(capacidade):\n            self.assentos.append(None)\n\n    def __procurarC(self, cliente: str):\n        for cli in self.assentos[:]:\n            if  cli != None and cli.getId() == cliente:\n                print(\"fail: cliente ja esta no cinema\")\n                return True\n        return False\n    \n    def __verificarA(self, assento: int):\n        if len(self.assentos)<= assento :\n            print(\"fail: cadeira nao existe\")\n            return True\n        return False\n\n    def reservar(self, cliente: Cliente, assento: int):\n        if self.__verificarA(assento):\n            return True\n        if self.assentos[assento] != None:\n            print('fail: cadeira ja esta ocupada')\n            return\n        self.__procurarC(cliente.getId())\n        \n        self.assentos[assento] = cliente\n\n\n    \n    def __str__(self):\n        lista = [elem for elem in self.assentos]\n        for _ in range(len(lista)):\n            if lista[_] == None:\n                lista[_] = \"-\"\n        assentos = \" \".join([str(elem) for elem in lista])\n        if assentos:\n            return f'[{assentos}]'\n        else:\n            return f'[]'\n\nclass main:\n    sala = Sala(0)\n    while True:\n        line = input()\n        print(\"$\"+ line)\n        args: list[str] = line.split()\n        if args[0] == \"end\":\n            break\n        if args[0] == \"init\":\n            capacidade = int(args[1])\n            sala = Sala(capacidade)\n        if args[0] == \"show\":\n            print(sala)\n        if args[0] == \"reserve\":\n            id = args[1]\n            phone = args[2]\n            cliente = Cliente(id, phone)\n            assento = int(args[3])\n            sala.reservar(cliente, assento)\n\nmain()",
+            "lines": "77"
+        }
+    ]
+}
